@@ -61,5 +61,4 @@ streamlit run app.py
 
 ---
 
-**Author**: 查志渊
-**License**: MIT
+**Author**:查志渊
