@@ -97,7 +97,12 @@ def advanced_chat(vectorstore, query):
     return response.choices[0].message.content
 
 if __name__ == "__main__":
-    db = create_vector_db("data.pdf")
+    pdf_path = "data.pdf"
+    if not os.path.exists(pdf_path):
+        pdf_path = "../data/data.pdf" # 尝试去上级目录找
+
+    db = create_vector_db(pdf_path)
+
     if db:
         while True:
             user_input = input("\n🙋‍♂️ 请输入问题 (输入 'q' 退出): ")

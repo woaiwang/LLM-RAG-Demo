@@ -11,7 +11,7 @@ import os
 
 # ================= 配置区域 =================
 # 1. 设置 API (还是用你之前的 DeepSeek key)
-os.environ["OPENAI_API_KEY"] = "sk-02315205540a43ec9f0c87241add5d2c" # 替换你的Key
+os.environ["OPENAI_API_KEY"] = "sk-02315205540a43ec9f0c87241add5d2c" 
 os.environ["OPENAI_API_BASE"] = "https://api.deepseek.com"
 
 # 2. 初始化 Embedding 模型 (LangChain 封装版)
@@ -20,7 +20,7 @@ print("1. 正在加载 Embedding 模型...")
 embeddings = HuggingFaceBgeEmbeddings(
     model_name="BAAI/bge-small-zh-v1.5",
     model_kwargs={'device': 'cpu'},
-    encode_kwargs={'normalize_embeddings': True}
+    encode_kwargs={'normalize_embeddings': True} #只有当向量归一化后，内积才等于余弦相似度，计算更快
 )
 
 # ================= 核心逻辑 =================
@@ -106,7 +106,13 @@ if __name__ == "__main__":
     # 第一次运行：构建数据库
     # 以后运行：如果 './chroma_db' 存在，可以直接 load，不用每次都 create
     # 这里为了演示，每次都重新创建
-    db = create_vector_db("data.pdf") # 确保当前目录下有这个文件
+    
+    # 自动寻找 data.pdf，无论是在当前目录还是上一级 data 目录
+    pdf_path = "data.pdf"
+    if not os.path.exists(pdf_path):
+        pdf_path = "../data/data.pdf" # 尝试去上级目录找
+    
+    db = create_vector_db(pdf_path) 
     
     if db:
         while True:
