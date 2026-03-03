@@ -17,3 +17,5 @@ chroma_db_lite/
 
 # 忽略敏感信息
 .envtemp.pdf
+
+.env
