@@ -6,7 +6,7 @@ from dotenv import load_dotenv # 需要 pip install python-dotenv
 load_dotenv()
 
 # 2. 从环境变量里读取，而不是写死在代码里
-api_key = os.getenv("deepseek_api_key")
+api_key = os.getenv("DEEPSEEK_API_KEY")
 
 if not api_key:
     raise ValueError("⚠️ 没找到 API Key！请检查环境变量配置。")

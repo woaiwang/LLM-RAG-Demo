@@ -16,4 +16,4 @@ chroma_db_lite/
 .DS_Store
 
 # 忽略敏感信息
-.env
+.envtemp.pdf

@@ -6,10 +6,14 @@ from FlagEmbedding import FlagReranker
 from openai import OpenAI
 import os
 import shutil 
+from dotenv import load_dotenv
 
 # ================= 配置区域 =================
-os.environ["OPENAI_API_KEY"] = "sk-02315205540a43ec9f0c87241add5d2c" 
-os.environ["OPENAI_API_BASE"] = "https://api.deepseek.com"
+load_dotenv()
+api_key = os.getenv("DEEPSEEK_API_KEY")
+if not api_key:
+    raise ValueError("⚠️ 没找到 API Key！请检查环境变量配置。")
+base_url = "https://api.deepseek.com"
 
 # 1. Embedding 模型 (保持不变，本来就很小)
 print("1. 正在加载 Embedding 模型...")
@@ -74,8 +78,8 @@ def advanced_chat(vectorstore, query):
 
     print(f"🤖 [3/3] 生成回答...")
     client = OpenAI(
-        api_key=os.environ["OPENAI_API_KEY"],
-        base_url=os.environ["OPENAI_API_BASE"]
+        api_key=api_key,
+        base_url=base_url
     )
 
     prompt = f"""

@@ -8,11 +8,16 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from openai import OpenAI
 import os
+from dotenv import load_dotenv
 
 # ================= 配置区域 =================
-# 1. 设置 API (还是用你之前的 DeepSeek key)
-os.environ["OPENAI_API_KEY"] = "sk-02315205540a43ec9f0c87241add5d2c" 
-os.environ["OPENAI_API_BASE"] = "https://api.deepseek.com"
+# 1. 加载环境变量
+load_dotenv()
+api_key = os.getenv("DEEPSEEK_API_KEY")
+if not api_key:
+    raise ValueError("⚠️ 没找到 API Key！请检查环境变量配置。")
+
+base_url = "https://api.deepseek.com"
 
 # 2. 初始化 Embedding 模型 (LangChain 封装版)
 # 这会自动下载 BGE 模型，和昨天那个是一样的
@@ -79,8 +84,8 @@ def chat(vectorstore, query):
     # 2. 增强 (Augment) & 生成 (Generate)
     # 这里我们不用 LangChain 复杂的 Chain，直接用最简单的 API 调用，让你看清楚原理
     client = OpenAI(
-        api_key=os.environ["OPENAI_API_KEY"],
-        base_url=os.environ["OPENAI_API_BASE"]
+        api_key=api_key,
+        base_url=base_url
     )
 
     prompt = f"""
