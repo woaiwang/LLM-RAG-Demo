@@ -8,3 +8,6 @@ python-dotenv
 pypdf
 sentence-transformers
 FlagEmbedding
+rank_bm25
+scikit-learn
+plotly

@@ -17,7 +17,7 @@ client = OpenAI(
     base_url="https://api.deepseek.com"
 )
 
-# 引入 tenacity 库进行重试 (Mock Interview Question 3: 鲁棒性优化)
+# 引入 tenacity 库来实现重试机制，增强代码的鲁棒性
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 # 改进版：增加重试机制 (Retry)
