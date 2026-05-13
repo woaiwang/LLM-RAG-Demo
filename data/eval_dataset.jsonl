@@ -1,2 +1,30 @@
-{"question": "示例问题1 - 请替换为实际政策问题", "ground_truth": "示例答案", "source_doc": "文件名.pdf"}
-{"question": "示例问题2 - 请替换为实际政策问题", "ground_truth": "示例答案", "source_doc": "文件名.pdf"}
+{"category":"A","question":"一等奖学金的金额是多少？","ground_truth":"2000元/人·年，获奖比例3%","source_doc":"奖学金"}
+{"category":"A","question":"保研资格对GPA排名的要求是什么？","ground_truth":"专业前30%（加权平均学分绩点GPA排名）","source_doc":"免试攻读"}
+{"category":"A","question":"考试违纪行为会被给予什么处分？","ground_truth":"该科目成绩无效并给予警告处分","source_doc":"考试违纪"}
+{"category":"A","question":"学生纪律处分中最严重的类型是什么？","ground_truth":"开除学籍","source_doc":"违纪处分"}
+{"category":"A","question":"五四奖章中\"东北大学十佳本科生\"的评选名额是多少？","ground_truth":"10名","source_doc":"五四"}
+{"category":"A","question":"二等奖学金的获奖比例是多少？","ground_truth":"10%","source_doc":"奖学金"}
+{"category":"B","question":"被处分了还能拿奖学金吗？","ground_truth":"不能。受到学校纪律处分者，取消学年奖学金评选资格","source_doc":"奖学金"}
+{"category":"B","question":"考研保送需要啥条件？","ground_truth":"专业排名前30%、四级425分以上、无不及格课程、品德良好","source_doc":"免试攻读"}
+{"category":"B","question":"考试带手机进考场会怎样？","ground_truth":"携带通讯设备进入考场且未放在指定位置，认定为违纪，成绩无效并给予警告处分","source_doc":"考试违纪"}
+{"category":"B","question":"打架斗殴会被学校怎么处理？","ground_truth":"根据情节严重程度，给予警告至开除学籍处分","source_doc":"违纪处分"}
+{"category":"B","question":"啥人能评上五四青年奖章？","ground_truth":"在校本科生、研究生、40岁以下青年教师和干部，满足相应评选条件","source_doc":"五四"}
+{"category":"B","question":"学校都有什么奖学金项目？","ground_truth":"优秀学生奖学金分三等：一等奖2000元(3%)、二等奖1000元(10%)、三等奖600元(20%)","source_doc":"奖学金"}
+{"category":"C","question":"哪些情况下会被取消奖学金评选资格？","ground_truth":"受纪律处分、有不及格课程、成绩造假、宿舍违章用电情节严重","source_doc":"奖学金"}
+{"category":"C","question":"保研对英语成绩的最低要求是什么？","ground_truth":"四级成绩不低于425分","source_doc":"免试攻读"}
+{"category":"C","question":"替考（代考）会被给予什么处分？","ground_truth":"开除学籍","source_doc":"考试违纪"}
+{"category":"C","question":"学生违纪处分中哪些情形可以从轻？","ground_truth":"情节轻微、主动承认并改正、受胁迫、及时阻止或弥补后果","source_doc":"违纪处分"}
+{"category":"C","question":"有不及格课程能否申请保研？","ground_truth":"不能，推免要求\"无不及格课程\"","source_doc":"免试攻读"}
+{"category":"C","question":"五四奖章评选的公示期是几天？","ground_truth":"3天（2026年4月4日至4月6日）","source_doc":"五四"}
+{"category":"D","question":"如果考试作弊被记过，还能申请奖学金吗？","ground_truth":"不能。考试作弊被记过后属于受纪律处分，奖学金评定办法明确规定受处分者取消评选资格","source_doc":"奖学金"}
+{"category":"D","question":"受纪律处分对保研有没有影响？","ground_truth":"有影响。保研要求品德良好、遵纪守法，且违纪处分记录会留在档案中","source_doc":"违纪处分"}
+{"category":"D","question":"学生违纪被开除学籍后，在校期间获得的奖学金需要退还吗？","ground_truth":"文档中未提及开除学籍与奖学金退还的关联","source_doc":"违纪处分"}
+{"category":"D","question":"五四奖章评选与奖学金评选有什么共同条件？","ground_truth":"两者都要求热爱祖国、拥护党的领导、遵纪守法、品学兼优","source_doc":"奖学金"}
+{"category":"D","question":"考试违纪处分后还有补救机会吗？","ground_truth":"有。被给予警告、严重警告、记过、留校察看处分的学生，若表现良好可对该课程给予补考或重修机会","source_doc":"考试违纪"}
+{"category":"D","question":"2025版学生违纪处分细则相比旧版有哪些变化？","ground_truth":"现有文档无法对比，2017版考试违纪办法和2025版违纪处分细则需结合分析","source_doc":"违纪处分"}
+{"category":"E","question":"我想申请保研，需要满足哪些条件？流程是怎样的？","ground_truth":"条件：GPA前30%、四级425分以上、无不及格、思想品德好。流程：9月初申请→学院资格审查→专业综合考核→成绩公示→确定推荐名单→学校公示→上报","source_doc":"免试攻读"}
+{"category":"E","question":"东北大学优秀学生奖学金一共有几等？金额和比例各是多少？","ground_truth":"三等：一等奖2000元/人·年(比例3%)、二等奖1000元/人·年(比例10%)、三等奖600元/人·年(比例20%)","source_doc":"奖学金"}
+{"category":"E","question":"考试作弊的处分流程是怎样的？","ground_truth":"监考记录违规事实→告知学生并签字确认→学院填写登记表→学院审批(警告至留校察看)或学校审批(开除学籍)→送达处分决定→学生10日内可申诉→材料归档","source_doc":"考试违纪"}
+{"category":"E","question":"学生违纪处分有哪几种类型？哪些情形会从重处分？","ground_truth":"5种：警告、严重警告、记过、留校察看、开除学籍。从重情形：威胁证人、毁灭证据、包庇、组织群体违纪、同时多项违纪、多次违纪等","source_doc":"违纪处分"}
+{"category":"E","question":"GPA不够前30%但想保研，还有没有其他途径？","ground_truth":"有两种途径：1）学术专长破格（GPA前50%且有突出科研成果）；2）退役士兵专项计划（GPA前50%且符合条件）","source_doc":"免试攻读"}
+{"category":"E","question":"五四奖章评选有几个类别？评选流程分几个阶段？","ground_truth":"8个类别（4个个人+4个集体）。5个阶段：推报(3/3-3/12)→确定人选(3/13-3/16)→评选(3/17-4/3)→公示(4/4-4/6)→表彰(4/7以后)","source_doc":"五四"}

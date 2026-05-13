@@ -1,0 +1,20 @@
+{
+  "1-Vector": {
+    "faithfulness": 4.97,
+    "relevance": 4.93,
+    "completeness": 4.73,
+    "overall": 4.88
+  },
+  "3-Hybrid": {
+    "faithfulness": 4.87,
+    "relevance": 4.9,
+    "completeness": 4.67,
+    "overall": 4.81
+  },
+  "4-Hybrid+Rewrite": {
+    "faithfulness": 4.87,
+    "relevance": 4.77,
+    "completeness": 4.3,
+    "overall": 4.64
+  }
+}

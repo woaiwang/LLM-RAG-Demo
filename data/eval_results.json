@@ -1,0 +1,226 @@
+{
+  "1-Vector": {
+    "overall": {
+      "hit_rate_1": 0.9,
+      "hit_rate_3": 0.9,
+      "hit_rate_5": 0.967,
+      "mrr": 0.917,
+      "precision_3": 0.844,
+      "avg_timing": 0.02
+    },
+    "by_category": {
+      "A": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "B": {
+        "hit_rate_3": 0.833,
+        "mrr": 0.875
+      },
+      "C": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "D": {
+        "hit_rate_3": 0.667,
+        "mrr": 0.708
+      },
+      "E": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      }
+    }
+  },
+  "2-BM25": {
+    "overall": {
+      "hit_rate_1": 0.733,
+      "hit_rate_3": 0.9,
+      "hit_rate_5": 0.933,
+      "mrr": 0.819,
+      "precision_3": 0.689,
+      "avg_timing": 0.0
+    },
+    "by_category": {
+      "A": {
+        "hit_rate_3": 1,
+        "mrr": 0.917
+      },
+      "B": {
+        "hit_rate_3": 0.833,
+        "mrr": 0.764
+      },
+      "C": {
+        "hit_rate_3": 1,
+        "mrr": 0.75
+      },
+      "D": {
+        "hit_rate_3": 0.667,
+        "mrr": 0.667
+      },
+      "E": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      }
+    }
+  },
+  "3-Hybrid": {
+    "overall": {
+      "hit_rate_1": 0.9,
+      "hit_rate_3": 0.933,
+      "hit_rate_5": 0.933,
+      "mrr": 0.917,
+      "precision_3": 0.844,
+      "avg_timing": 0.02
+    },
+    "by_category": {
+      "A": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "B": {
+        "hit_rate_3": 1,
+        "mrr": 0.917
+      },
+      "C": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "D": {
+        "hit_rate_3": 0.667,
+        "mrr": 0.667
+      },
+      "E": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      }
+    }
+  },
+  "4-Hybrid+Rewrite": {
+    "overall": {
+      "hit_rate_1": 0.9,
+      "hit_rate_3": 0.933,
+      "hit_rate_5": 0.933,
+      "mrr": 0.917,
+      "precision_3": 0.878,
+      "avg_timing": 1.35
+    },
+    "by_category": {
+      "A": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "B": {
+        "hit_rate_3": 1,
+        "mrr": 0.917
+      },
+      "C": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "D": {
+        "hit_rate_3": 0.667,
+        "mrr": 0.667
+      },
+      "E": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      }
+    }
+  },
+  "5-Hybrid+Expand": {
+    "overall": {
+      "hit_rate_1": 0.7,
+      "hit_rate_3": 0.867,
+      "hit_rate_5": 0.933,
+      "mrr": 0.8,
+      "precision_3": 0.722,
+      "avg_timing": 1.95
+    },
+    "by_category": {
+      "A": {
+        "hit_rate_3": 0.833,
+        "mrr": 0.875
+      },
+      "B": {
+        "hit_rate_3": 0.833,
+        "mrr": 0.875
+      },
+      "C": {
+        "hit_rate_3": 1,
+        "mrr": 0.833
+      },
+      "D": {
+        "hit_rate_3": 0.667,
+        "mrr": 0.417
+      },
+      "E": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      }
+    }
+  },
+  "6-Hybrid+Reranker": {
+    "overall": {
+      "hit_rate_1": 0.833,
+      "hit_rate_3": 0.9,
+      "hit_rate_5": 0.933,
+      "mrr": 0.875,
+      "precision_3": 0.778,
+      "avg_timing": 6.45
+    },
+    "by_category": {
+      "A": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "B": {
+        "hit_rate_3": 0.833,
+        "mrr": 0.792
+      },
+      "C": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "D": {
+        "hit_rate_3": 0.667,
+        "mrr": 0.667
+      },
+      "E": {
+        "hit_rate_3": 1,
+        "mrr": 0.917
+      }
+    }
+  },
+  "7-Full": {
+    "overall": {
+      "hit_rate_1": 0.833,
+      "hit_rate_3": 0.9,
+      "hit_rate_5": 0.933,
+      "mrr": 0.873,
+      "precision_3": 0.767,
+      "avg_timing": 2.75
+    },
+    "by_category": {
+      "A": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "B": {
+        "hit_rate_3": 0.833,
+        "mrr": 0.783
+      },
+      "C": {
+        "hit_rate_3": 1,
+        "mrr": 1.0
+      },
+      "D": {
+        "hit_rate_3": 0.667,
+        "mrr": 0.667
+      },
+      "E": {
+        "hit_rate_3": 1,
+        "mrr": 0.917
+      }
+    }
+  }
+}
